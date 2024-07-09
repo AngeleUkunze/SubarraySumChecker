@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contiguous Subarray Sum Checker</title>
+     <link rel="stylesheet" href="styles.css">
+  
+</head>
+<style type="text/css">
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Contiguous Subarray Sum Checker</h1>
+        <div class="input-group">
+            <label for="arrayInput">Array (comma-separated integers):</label>
+            <input type="text" id="arrayInput" placeholder="e.g. 4, 2, 7, 1, 9, 5">
+        </div>
+        <div class="input-group">
+            <label for="targetInput">Target Sum:</label>
+            <input type="number" id="targetInput" placeholder="e.g. 17">
+        </div>
+        <button onclick="checkSubarraySum()">Check</button>
+        <div id="result"></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
